@@ -5,7 +5,7 @@ dx = [1, 0, -1, 0]
 dy = [0, -1, 0, 1]
 
 n = int(input())
-matrix = [[0]*101 for _ in ragne(101)]
+matrix = [[0]*101 for _ in range(101)]
 for _ in range(n):
     x, y, d, g = map(int, input().split())
     matrix[x][y] = 1
@@ -24,7 +24,7 @@ for _ in range(n):
 
 ans = 0
 for i in range(100):
-    for j i n range(100):
+    for j in range(100):
         if matrix[i][j]:
             if matrix[i+1][j] and matrix[i][j+1] and matrix[i+1][j+1]:
                 ans+=1
